@@ -7,14 +7,16 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="container">
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container-fluid">
 
     <div class="navbar-header">
+
  <br />
 
   <% if current_user %>
-  Logged in as <%= current_user.name %>
+  <p class="nav">Logged in as <%= current_user.name %></p>
   &nbsp;
   &nbsp;
   <%= link_to "Log Out", session_path('current'), method: "delete" %>
@@ -33,6 +35,6 @@
 </nav>
 
 <%= yield %>
-
+</div>
 </body>
 </html>

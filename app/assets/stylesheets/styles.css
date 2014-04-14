@@ -1,0 +1,8 @@
+.container {
+  margin-top: 50px;
+}
+
+p.nav {
+  color: red;
+  display: inline;
+}
