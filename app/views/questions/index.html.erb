@@ -5,5 +5,8 @@
 <ol>
   <% @questions.each do |question| %>
     <li> <%= question.title %> </li>
+      <ul class="descriptions">
+        <li><%= link_to "Read more...", question_path(question) %></li>
+      </ul>
   <% end %>
 </ol>

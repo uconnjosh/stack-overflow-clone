@@ -1,0 +1,24 @@
+<h3>Question:</h3><%= @question.title %>
+<br />
+<h4>Description:</h4><%= @question.description %>
+<br />
+
+<%= form_for @answer, url: answers_path(@answer) do |form| %>
+  <%= form.label :description, "Enter your response below:" %>
+  <%= form.text_field :description %>
+
+  <%= form.hidden_field :user_id, :value => current_user.id %>
+  <%= form.hidden_field :question_id, :value => @question.id %>
+  <%= form.submit(:class => "btn btn-primary") %>
+
+<% end %>
+
+<h5>Answers:</h5>
+<ol>
+<% @question.answers.each do |a| %>
+  <li><%= a.description %></li>
+<% end %>
+</ol>
+
+
+

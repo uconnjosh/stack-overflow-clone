@@ -1,0 +1,6 @@
+  <%= form.label :description, "Enter your response below:" %>
+  <%= form.text_field :description %>
+
+  <%= form.hidden_field :user_id, :value => session[:user_id] %>
+  <%= form.hidden_field :question_id, :value => @question.id %>
+  <%= form.submit(:class => "btn btn-primary") %>

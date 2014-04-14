@@ -1,0 +1,6 @@
+<h1>Respond to <%= @question.title %></h1>
+<br />
+
+<%= form_for @answer do |form| %>
+<%= render('_form.html.erb') %>
+<% end %>

@@ -1,8 +1,12 @@
 .container {
-  margin-top: 50px;
+  margin-top: 75px;
 }
 
 p.nav {
   color: red;
   display: inline;
+}
+
+ul.descriptions {
+  list-style-type: none;
 }
