@@ -2,9 +2,9 @@
 
 FactoryGirl.define do
   factory :question do
-    title { Faker::Lorem.words }
-    description { Faker::Lorem.words }
+    title { Faker::Lorem.words.join(' ') }
+    description { Faker::Lorem.words.join(' ') }
     vote 0
-    association :user
+    user_id 1822
   end
 end

@@ -3,7 +3,7 @@
 FactoryGirl.define do
   factory :user do
     name { Faker::Name.name }
-    pasword { 'password' }
+    password "password"
     password_confirmation { |u| u.password }
   end
 end
