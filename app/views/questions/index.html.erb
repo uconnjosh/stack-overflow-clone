@@ -1,1 +1,9 @@
-<h1> EpicoderFlow </h1>
+<h1> Stack Under Flow </h1>
+
+<h2>This is the Questions page index, showing all the questions.</h2>
+
+<ol>
+  <% @questions.each do |question| %>
+    <li> <%= question.title %> </li>
+  <% end %>
+</ol>
